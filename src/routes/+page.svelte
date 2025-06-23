@@ -11,6 +11,8 @@
     import six from '../lib/images/1 (2).png';
     import seven from '../lib/images/1 (3).png';
     import eight from '../lib/images/1 (4).png';
+    import rules from '../lib/images/roles.png';
+    import guides from '../lib/images/guide.png';
 
   import { onMount } from 'svelte';
   let isMenuOpen = false;
@@ -70,7 +72,6 @@
 </script>
 
 <nav class="fixed w-full z-[1000] bg-white flex justify-between items-center px-6 py-4 shadow">
-  <!-- Logo Section -->
   <div class="flex items-center gap-4">
     <a href="#">
       <img src="{octa}" alt="Logo" class="h-14 w-auto" />
@@ -126,34 +127,52 @@
 
 <div>
 
-    <div class="container mt-10" style="background-image: url({front})">
-        <h1 class="text-[4vw] text-white pb-1 font-bold"> FREEDOM WALL</h1>
-        <p class="text-white text-xl tracking-widest pb-10"> Your Voice. Your Space.</p>
-        <button class="conbtn" >Post your thought</button>
-        <button class="conbtn">Browse posts</button>
+  <div class="relative mt-10 bg-no-repeat bg-cover bg-center min-h-[100vh] flex items-center justify-center" style="background-image: url({front});">
+    <div class="relative z-10 flex flex-col items-center justify-center text-center w-full px-4 py-12">
+      <h1 class="text-white font-extrabold leading-tight mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">FREEDOM WALL</h1>
+      <p class="text-white font-medium tracking-wide mb-6 text-base sm:text-lg md:text-xl lg:text-2xl">Your Voice. Your Space.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="conbtn text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3">
+          Post your thought
+        </button>
+        <button class="conbtn text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3">
+          Browse posts
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="conbout w-full max-w-7xl mx-auto rounded-3xl px-4 py-10 flex flex-col gap-y-10 xl:flex-row gap-x-5 lg:gap-y-10 sm:gap-y-10">
+    <div class="w-full xl:w-4/12 mb-8 sm:text-center">
+      <h1 class="text-3xl sm:text-4xl xl:text-3xl font-bold leading-tight mb-2">
+        FREEDOM WALL
+      </h1>
+      <h3 class="text-base sm:text-lg xl:text-xl font-semibold mb-4">
+        Your Voice. Your Space.
+      </h3>
+      <button class="thoughtbtn text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3 bg-[#F06336] text-white rounded-md shadow-md hover:bg-[#e3532c] transition">
+        Post your thought
+      </button>
     </div>
 
-    <div class="">
-        <div class="conbout mt-20">
-            <h1 class="text-4xl pb-5 w-[40%] font-extrabold">FREEDOM WALL</h1>
-            <h3 class="font-bold w-[40%]">Your Voice. Your Space.</h3>
-            <button class="thoughtbtn"> Post your thought</button>
+    <div class="w-full xl:w-8/12 text-justify text-sm space-y-4 p-2 sm:text-base md:text-md sm:mt-0">
+      <p>
+        The OCTA Freedom Wall is a dedicated online space where students of the College of Computer Studies can freely share their thoughts, ideas, and experiences.
+      </p>
+      <p>
+        Whether it's tech innovations, shoutouts, or college life stories, this platform encourages open dialogue in a supportive and respectful environment.
+        It's a place to connect, express, and inspire within the OCTA community.
+      </p>
+    </div>
+  </div>
 
-            <div class="right">
-                <p class="max-w-[80vh] w-11/12 justify-center ">The OCTA Freedom Wall is a dedicated online space where students
-                of the College of Computer Studies can freely share their thoughts,
-                ideas, and experiences. 
-                </p>
-             <br>
-                <p class="w-[75vh]">Whether it's tech innovations, shoutouts, or college life stories, this platform encourages open dialogue in a supportive and respectful environment.
-                 It's a place to connect, express, and inspire within the OCTA community.
-                </p>
-            </div>
-           
-        </div>
+
         <!-- svelte-ignore a11y_missing_attribute -->
-        <img src="{aboutfw}" class="aboutimg">
-    </div>
+    <img src="{aboutfw}" class="aboutimg hidden sm:block">
+
+    <img src="{guides}" alt="" class="flex w-[80%] mx-auto block sm:hidden">
+
 
     <div class="CYN">
         <div class="CYN-About">
@@ -163,52 +182,56 @@
             </p>
             <button >Post your thought</button>
         </div>
-        <div class="cynimg">
-          <img src="{one}" alt="">
-          <img src="{two}" alt="">
-          <img src="{three}" alt="">
-          <img src="{four}" alt="">
+        <div class="px-4 py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center text-center">
+          <img src="{one}" alt="icon1" class="w-76 h-auto object-contain">
+          <img src="{two}" alt="icon2" class="w-76 h-auto object-contain">
+          <img src="{three}" alt="icon3" class="w-76 h-auto object-contain">
+          <img src="{four}" alt="icon4" class="w-76 h-auto object-contain">
         </div>
     </div>
 
-   <div class="freedompost">
-        <div class="fdexample">
-          <div class="fdexampleTop flex">
-            <img src="{five}" alt="" class="fdexampleimg">
-            <img src="{six}" alt="" class="fdexampleimg">
-          </div>
-          <div class="fdexampleBot flex">
-            <img src="{seven}" alt="" class="fdexampleimg">
-            <img src="{eight}" alt="" class="fdexampleimg">
-          </div>
+  <section class="w-full my-[20vh] px-6 sm:px-12 lg:px-20">
+    <div class="flex flex-col lg:flex-row  gap-10">
+      <div class="w-full lg:w-1/2 flex flex-col gap-4">
+        <div class="flex gap-4">
+          <img src="{five}" alt="" class="w-1/2 rounded-lg object-cover hover:scale-105 transition duration-300">
+          <img src="{six}" alt="" class="w-1/2 rounded-lg object-cover hover:scale-105 transition duration-300">
         </div>
-        <div class="freedompostContainer">
-            <h1 class="text-4xl font-bold">Freedom Posts</h1>
-            <p class="text-sm pt-5 font-bold">
-                The Freedom Posts section is where all contributions from students and teachers are showcased.
-                Whether you're sharing tech insights, personal experiences,
-                or campus-related thoughts, your posts will appear here for others to engage with. 
-            </p>
-            <br>
-            <p class="text-sm font-bold">
-                It's a space where voices can be heard, ideas can spark discussions, and everyone can connect through shared experiences.
-            </p>
-            
-            <button class="conbtn">Browse posts</button>
+        <div class="flex gap-4 goup">
+          <img src="{seven}" alt="" class="w-1/2 rounded-lg object-cover hover:scale-105 transition duration-300">
+          <img src="{eight}" alt="" class="w-1/2 rounded-lg object-cover hover:scale-105 transition duration-300">
         </div>
+      </div>
+
+      <div class="w-full lg:w-1/2 max-w-xl p-5">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 mt-[10vh]">Freedom Posts</h1>
+        <p class="text-sm sm:text-base text-justify font-medium mb-4">
+          The Freedom Posts section is where all contributions from students and teachers are showcased. Whether you're sharing tech insights, personal experiences, or campus-related thoughts, your posts will appear here for others to engage with.
+        </p>
+        <p class="text-sm sm:text-base text-justify font-medium mb-6">
+          It's a space where voices can be heard, ideas can spark discussions, and everyone can connect through shared experiences.
+        </p>
+        <button class="text-sm sm:text-base sm:px-6 py-2 sm:py-3 conbtn">
+          Browse posts
+        </button>
+      </div>
     </div>
+  </section>
+
+
 
 <section class="text-center flex flex-col items-center">
-  <div class="mx-[30vh]">
-    <h1 class="text-[#F06336] text-[4.6vh] my-[5vh] mb-[10vh] px-[40vh] py-5 rounded-xl shadow-md shade drop-shadow-xl">
+  <div class="sm:mx-auto items-center">
+    <h1 class="w-full text-[#F06336] text-[clamp(1.5rem,3vw,2.25rem)] font-bold text-center px-7 py-4 my-7 bg-white rounded-3xl shadow-2xl drop-shadow-2xl sm:px-[15vh] md:px-[30vh]">
       Community Guidelines
     </h1>
   </div>
-  <img src="{cg}" alt="" class="rounded-3xl shadow-md shade drop-shadow-xl w-[70%] p-7"/>
+  <img src="{cg}" alt="" class="rounded-3xl shadow-md shade drop-shadow-xl w-[70%] p-7 hidden sm:block"/>
+  <img src="{rules}" alt="" class="rounded-3xl shadow-md shade drop-shadow-xl block sm:hidden p-7 w-[70%]">
 </section>
 
-  <div class="wrapper">
-  <h1>FAQs</h1>
+  <div class="wrapper px-4 md:px-20">
+  <h1 class="text-2xl md:text-3xl font-bold text-center mb-6">FAQs</h1>
   {#each faqs as faq, index}
     <div class="faq">
       <button
@@ -227,12 +250,10 @@
 
 </div>
 
-<footer class="bg-zinc-800 text-white font-poppins pt-10 pb-4 px-[20vh]">
-  <div class="max-w-6xl mx-auto px-6">
-    <!-- Grid layout: 3 columns -->
+
+<footer class="bg-zinc-800 text-white font-poppins py-10 px-4 md:px-10 pb-10 sm:pb-7">
+  <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-white pb-6 text-center md:text-left">
-      
-      <!-- Left: About -->
       <div class="flex flex-col items-center md:items-start">
         <div class="flex items-center mb-4">
           <img src="{octa}" alt="OCTA Logo" class="w-12 h-12" />
@@ -245,10 +266,9 @@
         </p>
       </div>
 
-      <!-- Center: Navigation -->
       <div class="flex flex-col items-center">
         <h3 class="font-bold text-lg mb-3">Navigation</h3>
-        <ul class="space-y-1 text-sm pl-[30vh]">
+        <ul class="space-y-1 text-sm pl-0 md:pl-[30vh]">
           <li><a href="#" class="hover:underline">Freedom Wall</a></li>
           <li><a href="#" class="hover:underline">Events</a></li>
           <li><a href="#" class="hover:underline">News</a></li>
@@ -257,7 +277,6 @@
         </ul>
       </div>
 
-      <!-- Right: Socials -->
       <div class="flex flex-col items-center md:items-end">
         <h3 class="font-bold text-lg mb-3">Get In Touch</h3>
         <div class="flex space-x-4 text-2xl">
@@ -268,10 +287,9 @@
       </div>
     </div>
 
-    <!-- Bottom: Terms -->
-    <div class="flex justify-center gap-8 py-4 text-sm">
-      <h4 class="hover:underline cursor-pointer">Terms And Conditions</h4>
-      <h4 class="hover:underline cursor-pointer">Privacy Policy</h4>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 text-sm text-center pt-6 sm:pt-7">
+      <h4 class="hover:underline cursor-pointer pt-2">Terms And Conditions</h4>
+      <h4 class="hover:underline cursor-pointer pt-2">Privacy Policy</h4>
     </div>
   </div>
 </footer>

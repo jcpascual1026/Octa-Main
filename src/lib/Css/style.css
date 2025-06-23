@@ -5,16 +5,6 @@ div{
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vw;
-    text-align: center;
-    justify-content: center;
-    max-height: 40vw;
-    padding-top: 22vh;
-}
-
 .conbtn {
     margin: 10vh 5vh 0;
     background-color: #eee;
@@ -45,11 +35,9 @@ div{
    }
 
    .conbout{
-    width: 70%;
-    border-radius: 3rem;
-    margin: 20vh 20vh 7vh 30vh;
-    padding: 6vh 0 4vh 10vh;
-    max-height: 35vh;
+    max-width: 70%;
+    margin: 20vh auto;
+    padding: 6vh 4vh;
     font-family: 'Poppins';
     box-shadow: 0 0.5px 0.5px 1px rgba(255, 255, 255, 0.2),
     0 10px 20px rgba(0, 0, 0, 0.2), 0 4px 5px 0px rgba(0, 0, 0, 0.05);
@@ -111,7 +99,6 @@ div{
 }
 
 .cynimg{
-    display: flex;
     width: 80%;
     margin: 0 auto;
 }
@@ -162,37 +149,8 @@ div{
     color: grey;
    }
 
-   .freedompost{
-    display: flex;
-    justify-content: center;
-    padding: 10vh 5vh 5vh 5vh;
-    margin-top: 10vh;
-   }
-
-   .freedompostContainer {
-    align-items: center;
-    max-width: 40%;
-    padding: 5vh 0vh 0vh 10vh;
-   }
-
-   .fdexample img{
-    width: 18rem;
-    height: auto;
-    transition: 400ms;
-}
-
-.fdexampleBot .fdexampleimg{
+.goup{
     margin-top: -15rem;
-}
-
-.fdexample:hover .fdexampleimg{
-    opacity: .5;
-    filter: blur(1rem);
-}
-
-.fdexample .fdexampleimg:hover{
-    opacity: 1;
-    filter: blur(0px);
 }
 
 .shade{
