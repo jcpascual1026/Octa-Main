@@ -229,10 +229,8 @@
 
 <footer class="bg-zinc-800 text-white font-poppins pt-10 pb-4 px-[20vh]">
   <div class="max-w-6xl mx-auto px-6">
-    <!-- Grid layout: 3 columns -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-white pb-6 text-center md:text-left">
       
-      <!-- Left: About -->
       <div class="flex flex-col items-center md:items-start">
         <div class="flex items-center mb-4">
           <img src="{octa}" alt="OCTA Logo" class="w-12 h-12" />
@@ -245,7 +243,6 @@
         </p>
       </div>
 
-      <!-- Center: Navigation -->
       <div class="flex flex-col items-center">
         <h3 class="font-bold text-lg mb-3">Navigation</h3>
         <ul class="space-y-1 text-sm pl-[30vh]">
@@ -257,7 +254,6 @@
         </ul>
       </div>
 
-      <!-- Right: Socials -->
       <div class="flex flex-col items-center md:items-end">
         <h3 class="font-bold text-lg mb-3">Get In Touch</h3>
         <div class="flex space-x-4 text-2xl">
@@ -268,7 +264,6 @@
       </div>
     </div>
 
-    <!-- Bottom: Terms -->
     <div class="flex justify-center gap-8 py-4 text-sm">
       <h4 class="hover:underline cursor-pointer">Terms And Conditions</h4>
       <h4 class="hover:underline cursor-pointer">Privacy Policy</h4>
