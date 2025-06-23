@@ -250,10 +250,17 @@
 
 </div>
 
+<<<<<<< HEAD
 
 <footer class="bg-zinc-800 text-white font-poppins py-10 px-4 md:px-10 pb-10 sm:pb-7">
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-white pb-6 text-center md:text-left">
+=======
+<footer class="bg-zinc-800 text-white font-poppins pt-10 pb-4 px-[20vh]">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-white pb-6 text-center md:text-left">
+      
+>>>>>>> 37c5a59db2442d1ee3c355c0ab9a70752a1fb11b
       <div class="flex flex-col items-center md:items-start">
         <div class="flex items-center mb-4">
           <img src="{octa}" alt="OCTA Logo" class="w-12 h-12" />
@@ -287,9 +294,15 @@
       </div>
     </div>
 
+<<<<<<< HEAD
     <div class="flex flex-col sm:flex-row justify-center gap-4 text-sm text-center pt-6 sm:pt-7">
       <h4 class="hover:underline cursor-pointer pt-2">Terms And Conditions</h4>
       <h4 class="hover:underline cursor-pointer pt-2">Privacy Policy</h4>
+=======
+    <div class="flex justify-center gap-8 py-4 text-sm">
+      <h4 class="hover:underline cursor-pointer">Terms And Conditions</h4>
+      <h4 class="hover:underline cursor-pointer">Privacy Policy</h4>
+>>>>>>> 37c5a59db2442d1ee3c355c0ab9a70752a1fb11b
     </div>
   </div>
 </footer>
